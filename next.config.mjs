@@ -14,9 +14,6 @@ const nextConfig = {
       },
     ],
   },
-  experimental: {
-    appDir: true,  // Enable app directory for Next.js 13+ (if needed)
-  },
   webpack(config) {
     config.resolve.modules.push(path.resolve('src')); // Add src directory to webpack
     return config;
